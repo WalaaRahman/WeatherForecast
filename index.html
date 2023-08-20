@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JS-5</title>
+
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg p-4">
+    <div class="container">
+      <!-- <div class="row">
+                <div class="col-2"> -->
+      <a class="navbar-brand" href="#">
+        <img class="logo" src="images/logo.png" alt="">
+        <div class="logo-text">
+          <h4>Weather</h4>
+          <p class="logo-p">taglines goes here</p>
+        </div>
+      </a>
+      <!-- </div>
+                <div class="col-3"> -->
+      <a class="navbar-brand" href="#">
+
+      </a>
+      <!-- </div>
+            </div>
+         -->
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto ">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">News</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Livecameras</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Photos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Home -->
+  <section id="home">
+    <div class="container">
+      <form action="" class="position-relative mb-4">
+        <input id="search" class="form-control" type="text" placeholder="Find your location...">
+        <button class="btn btn-primary find-btn" id="search-btn">Find</button>
+      </form>
+
+      <div class="d-flex py-4 justify-content-center row">
+        <div class="col-md-4">
+          <div class="card light today">
+            <div class="card-header">
+              <div class="d-flex justify-content-between">
+                <div id="todayday"></div>
+                <div id="todayDate">
+                 <span id="day"></span><span id="month"></span> </div>
+              </div>
+            </div>
+            <div class="card-body">
+              <div class="card-title" id="location"></div>
+              <div class="degree justify-content-between">
+                <div class="number " id="todayTemp">
+                
+                </div>
+                <div class="forecast-icon ">
+                  <img src="" id="todayIcon" alt="" width="90">
+                </div>
+              </div>
+             
+              <div class="custom todayCustom" id="todayCustom"></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card dark tomorrow">
+            <div class="card-header">
+              <div class="text-center">
+                <div id="tomorrowDay"></div>
+              </div>
+            </div>
+            <div class="card-body text-center p-4">
+             
+              <div class="forecast">
+                <div >
+                  <img id="tomorrowIcon" src="" alt="" width="90">
+                </div>
+                <div class="degree justify-content-center">
+                  <div class="numberSmall " id="tomorrowMax">
+                 
+                  </div>
+                </div>
+               
+              </div>
+              <small id="tomorrowMin"></small>
+             
+              <div class="custom" id="tomorrowCustom"></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card light afterTomorrow">
+            <div class="card-header">
+              <div class="text-center">
+                <div id="afterTomorrowDay"></div>
+              </div>
+            </div>
+            <div class="card-body text-center p-4">
+             
+              <div class="forecast">
+                <div >
+                  <img id="afterTomorrowIcon" src="" alt="" width="90">
+                </div>
+                <div class="degree justify-content-center">
+                  <div class="numberSmall " id="afterTomorrowMax">
+                   
+                  </div>
+                </div>
+               
+              </div>
+              <small id="afterTomorrowMin"></small>
+             
+              <div class="custom " id="afterTomorrowCustom"></div>
+            </div>
+          </div>
+        </div>
+        
+       
+       
+      </div>
+    </div>
+  </section>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
